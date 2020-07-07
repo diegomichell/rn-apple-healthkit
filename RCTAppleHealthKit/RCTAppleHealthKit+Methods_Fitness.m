@@ -91,7 +91,7 @@
         unit = [HKUnit mileUnit];
     }
     
-    [self setObserverForType:samplesType unit:unit];
+    [self setObserverForType:samplesType unit:unit type:type];
 }
 
 
