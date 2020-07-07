@@ -136,6 +136,41 @@
     } else if ([type isEqual:@"Swimming"]){
         return [HKObjectType quantityTypeForIdentifier:HKQuantityTypeIdentifierDistanceSwimming];
     }
+    // Non Activity types
+    else if ([type isEqual:@"ActiveEnergyBurned"]){
+        return [HKObjectType quantityTypeForIdentifier:HKQuantityTypeIdentifierActiveEnergyBurned];
+    }
+    else if ([type isEqual:@"BodyTemperature"]){
+        return [HKObjectType quantityTypeForIdentifier:HKQuantityTypeIdentifierBodyTemperature];
+    }
+    else if ([type isEqual:@"BasalEnergyBurned"]){
+        return [HKObjectType quantityTypeForIdentifier:HKQuantityTypeIdentifierBasalEnergyBurned];
+    }
+    else if ([type isEqual:@"LeanBodyMass"]){
+        return [HKObjectType quantityTypeForIdentifier:HKQuantityTypeIdentifierLeanBodyMass];
+    }
+    else if ([type isEqual:@"HeartRate"]){
+        return [HKObjectType quantityTypeForIdentifier:HKQuantityTypeIdentifierHeartRate];
+    }
+    else if ([type isEqual:@"BodyMass"]){
+        return [HKObjectType quantityTypeForIdentifier:HKQuantityTypeIdentifierBodyMass];
+    }
+    else if ([type isEqual:@"BodyMassIndex"]){
+        return [HKObjectType quantityTypeForIdentifier:HKQuantityTypeIdentifierBodyMass];
+    }
+    else if ([type isEqual:@"BodyFatPercentage"]){
+        return [HKObjectType quantityTypeForIdentifier:HKQuantityTypeIdentifierBodyFatPercentage];
+    }
+    else if ([type isEqual:@"BloodGlucose"]){
+        return [HKObjectType quantityTypeForIdentifier:HKQuantityTypeIdentifierBloodGlucose];
+    }
+    else if ([type isEqual:@"BloodPressureSystolic"]){
+        return [HKObjectType quantityTypeForIdentifier:HKQuantityTypeIdentifierBloodPressureSystolic];
+    }
+    else if ([type isEqual:@"BloodPressureDiastolic"]){
+        return [HKObjectType quantityTypeForIdentifier:HKQuantityTypeIdentifierBloodPressureDiastolic];
+    }
+    
     // default [type isEqual:@"Workout"])
     return [HKObjectType workoutType];
 }
